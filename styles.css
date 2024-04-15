@@ -1,0 +1,32 @@
+.main {
+    background-image: url('https://cdn.aitimes.com/news/photo/202211/148182_156488_1144.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-list img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-list h3, .team-list p {
+    margin: 5px 0;
+}
