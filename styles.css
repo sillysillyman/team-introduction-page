@@ -30,3 +30,9 @@
 .team-list h3, .team-list p {
     margin: 5px 0;
 }
+
+.profile-img {
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
