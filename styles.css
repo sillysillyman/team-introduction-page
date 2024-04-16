@@ -46,12 +46,10 @@
 }
 
 .intros {
-    width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
-    margin: auto;
+    padding: 100px;
 }
 
 .intro-title strong {
