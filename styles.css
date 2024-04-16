@@ -2,14 +2,21 @@
     font-family: Gilroy;
 }
 
-.main {
-    /* background-image: url('https://cdn.aitimes.com/news/photo/202211/148182_156488_1144.jpg'); */
-    background-image: url('https://akcongress.com/blog/wp-content/uploads/2022/05/academic_conference_shutterstock_481869205.jpg');
-    /* background-image: url('https://www.enago.com/academy/wp-content/uploads/2024/01/FeatureImages-16-750x340.png'); */
-    /* background-image: url('https://www.vmix.com/images/2023/solutions/meetingsheader.jpg'); */
-    background-position: center;
-    background-size: cover;
-    color: white;
+#caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+  color: white;
+}
+
+.carousel-item img {
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 .team-list {
