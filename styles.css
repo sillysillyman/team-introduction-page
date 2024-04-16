@@ -1,3 +1,7 @@
+* {
+    font-family: Gilroy;
+}
+
 .main {
     background-image: url('https://cdn.aitimes.com/news/photo/202211/148182_156488_1144.jpg');
     background-position: center;
@@ -39,4 +43,34 @@
 
 .profile-img:focus {
   filter: grayscale(0%);
+}
+
+.intros {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    margin: auto;
+}
+
+.intro-title strong {
+    font-size: 18px;
+    font-weight: 300;
+    color: #2c2a52;
+    display: block;
+}
+
+.intro-title em {
+    margin-top: 14px;
+    display: block;
+    font-size: 54px;
+    font-weight: 500;
+    font-style: normal;
+    color: #2c2a52;
+}
+
+.intro-txt span {
+    font-weight: 500;
+    color: #4b49a1;
 }
