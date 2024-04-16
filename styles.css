@@ -36,3 +36,7 @@
   cursor: pointer;
   transition: filter 0.3s ease;
 }
+
+.profile-img:focus {
+  filter: grayscale(0%);
+}
