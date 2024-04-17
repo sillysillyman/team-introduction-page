@@ -37,3 +37,10 @@ $('#kevinProfileImg').click(() => {
     $('#kevinProfileImg').css('filter', 'grayscale(0%)');
     $('#kevinIntro').toggle();
 });
+
+$(`#${name}Img`).click(() => {
+    $('.intro').hide();
+    $('.profile-img').css('filter', 'grayscale(100%)');
+    $(`#${name}Img`).css('filter', 'grayscale(0%)');
+    $(`#${name}Intro`).toggle();
+});
