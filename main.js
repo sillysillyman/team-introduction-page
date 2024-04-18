@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $('navbar-toggler').addClass('light-text').removeClass('dark-text');
+    $('.navbar-brand').addClass('light-text').removeClass('dark-text');
+    $('.nav-link').addClass('light-text').removeClass('dark-text');
     $('.intro').hide();
     $('.profile-img').css('filter', 'grayscale(100%)');
     $('.profile-name').css('text-decoration', 'none');
@@ -8,6 +11,20 @@ $(document).ready(function () {
     $('#carouselExampleIndicators').carousel({
         interval: 5000,
         ride: "carousel"
+    });
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var carouselHeight = $('.carousel').outerHeight();
+        console.log(carouselHeight);
+        if (scroll < carouselHeight) {
+            $('navbar-toggler').addClass('light-text').removeClass('dark-text');
+            $('.navbar-brand').addClass('light-text').removeClass('dark-text');
+            $('.nav-link').addClass('light-text').removeClass('dark-text');
+        } else {
+            $('navbar-toggler').addClass('dark-text').removeClass('light-text');
+            $('.navbar-brand').addClass('dark-text').removeClass('light-text');
+            $('.nav-link').addClass('dark-text').removeClass('light-text');
+        }
     });
 });
 $('.profile-img').click(function () {
@@ -47,3 +64,9 @@ $('#kevinProfileImg').click(() => {
     $('#kevin').css('text-decoration', 'underline');
     $('#kevinIntro').toggle();
 });
+$('.wip').click(() => {
+    alert('죄송합니다. 아직 준비 중인 페이지입니다.');
+})
+// $('.nav-item').click(() => {
+
+// })
